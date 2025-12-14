@@ -120,6 +120,17 @@ h3.job-title {
 .roles {
   margin-left: 1.5rem;
 }
+/* Tighten role bullets (AutoZone section) */
+ul.roles {
+  margin-top: 4px;
+  margin-bottom: 6px;
+  padding-left: 18px;   /* tighter indent */
+}
+
+ul.roles li {
+  margin-bottom: 2px;  /* 🔽 tighter vertical spacing */
+  line-height: 1.25;
+}
 
 .achievements {
   margin-left: 0;
