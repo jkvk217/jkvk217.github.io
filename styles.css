@@ -231,4 +231,30 @@ section {
 
   h1, h2, h3 {
     color: #000 !important;
-    page-break-a
+    page-break-after: avoid;
+  }
+
+  p, ul, li {
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  a[href^="https://www.linkedin.com"]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+  }
+
+  .pdf-button-wrapper {
+    display: none !important;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+  }
+}
