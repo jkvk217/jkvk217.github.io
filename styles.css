@@ -355,10 +355,14 @@ ul.achievements li {
   }
 
   /* Keep colors correct */
-  .edu-level {
-    color: #c00000 !important;
-    font-weight: bold;
-  }
+  /* Education headings styled like job titles */
+.edu-level {
+  color: #c00000;        /* same red */
+  font-size: 12pt;       /* same size */
+  font-weight: 700;      /* same weight */
+  line-height: 1.1;
+}
+
 
 }
   /* Ensure colors print correctly */
