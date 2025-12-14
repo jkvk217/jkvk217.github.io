@@ -95,17 +95,25 @@ section {
 /* =========================
    Work Experience
    ========================= */
-/* FINAL spacing fix — overrides Word styles */
-h3 {
+/* Job titles */
+h3.job-title {
+  font-size: 12pt;
+  font-weight: 700;
+  color: #c00000;          /* dark red */
   margin-top: 10px !important;
   margin-bottom: 0 !important;
   line-height: 1.1 !important;
 }
 
 .job-meta {
+  font-size: 11pt;
   margin-top: 2px !important;
   margin-bottom: 4px !important;
   line-height: 1.25 !important;
+}
+
+.job-meta + ul {
+  margin-top: 2px !important;
 }
 
 
