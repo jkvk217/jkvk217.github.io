@@ -130,6 +130,9 @@ ul.roles {
 ul.roles {
   list-style: none;
 }
+ul.roles li {
+  font-style: italic;
+}
 
 ul.roles li::before {
   content: "–";
