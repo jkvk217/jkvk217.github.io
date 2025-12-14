@@ -279,3 +279,11 @@ section {
   font-style: italic;
   font-weight: 800;
 }
+.job-meta .company {
+  font-weight: 700;
+}
+
+.job-meta .details,
+.job-meta .via {
+  font-weight: 400;
+}
