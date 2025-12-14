@@ -36,11 +36,11 @@ h1, h2 {
 }
 
 .section-heading {
-  font-size: 13pt;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 12.5pt;          /* smaller, recruiter-friendly */
+  font-weight: 700;
+  letter-spacing: 0.5px;      /* tighter than before */
   text-transform: uppercase;
-  margin: 18px 0 6px;
+  margin: 16px 0 6px;         /* less vertical space */
   color: #000;
 }
 
@@ -99,16 +99,19 @@ section {
 .job-title {
   font-size: 12pt;
   font-weight: bold;
-  color: #c00000; /* dark red */
-  margin-bottom: 2px;
+  color: #c00000;
+  margin-top: 10px;
+  margin-bottom: 2px;   /* 🔽 reduced */
 }
 
 .job-meta {
   font-size: 11pt;
   font-weight: bold;
   color: #000;
-  margin-bottom: 6px;
+  margin-top: 0;        /* 🔽 critical */
+  margin-bottom: 6px;  /* tighter list spacing */
 }
+
 
 .roles {
   margin-left: 1.5rem;
