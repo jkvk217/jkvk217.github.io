@@ -242,6 +242,45 @@ ul.achievements {
   transform: translateY(0);
 }
 
+.section-heading {
+  font-style: italic;
+  font-weight: 700;
+}
+.job-meta .company {
+  font-weight: 700;
+}
+
+.job-meta .details,
+.job-meta .via {
+  font-weight: 400;
+}
+@media (max-width: 600px), print {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+ .education-divider {
+  width: 1px;
+  background-color: #999;
+  margin: 0 18px;          /* space left & right of divider */
+  align-self: stretch;    /* full height of content */
+}
+
+
+/* Kill default UL spacing under job-meta */
+.job-meta + ul {
+  margin-top: 2px !important;
+}
+/* ===== Fix spacing between role list and achievement list ===== */
+
+/* Remove default spacing from list items */
+ul.roles li,
+ul.achievements li {
+  margin-top: 0 !important;
+  margin-bottom: 2px !important;
+  line-height: 1.25;
+}
+
 /* =========================
    Mobile adjustments
    ========================= */
@@ -349,42 +388,5 @@ ul.achievements {
     margin: 10px 0;
   }
 }
-.section-heading {
-  font-style: italic;
-  font-weight: 700;
-}
-.job-meta .company {
-  font-weight: 700;
-}
 
-.job-meta .details,
-.job-meta .via {
-  font-weight: 400;
-}
-@media (max-width: 600px), print {
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
-
- .education-divider {
-  width: 1px;
-  background-color: #999;
-  margin: 0 18px;          /* space left & right of divider */
-  align-self: stretch;    /* full height of content */
-}
-
-
-/* Kill default UL spacing under job-meta */
-.job-meta + ul {
-  margin-top: 2px !important;
-}
-/* ===== Fix spacing between role list and achievement list ===== */
-
-/* Remove default spacing from list items */
-ul.roles li,
-ul.achievements li {
-  margin-top: 0 !important;
-  margin-bottom: 2px !important;
-  line-height: 1.25;
-}
 
