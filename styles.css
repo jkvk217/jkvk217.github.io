@@ -320,6 +320,23 @@ ul.achievements li {
    ========================= */
 
 @media print {
+     /* Fix Education layout in print */
+  .education-grid {
+    display: block !important;
+  }
+
+  .education-item {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  /* Keep colors correct */
+  .edu-level {
+    color: #c00000 !important;
+    font-weight: bold;
+  }
+
+}
   /* Ensure colors print correctly */
   body {
     -webkit-print-color-adjust: exact;
