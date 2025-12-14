@@ -102,8 +102,7 @@ section {
    ========================= */
 
 /* Job titles (shared with Education levels) */
-h3.job-title,
-.edu-level {
+h3.job-title {
   color: #c00000;
   font-size: 12pt;
   font-weight: 700;
