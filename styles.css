@@ -93,28 +93,23 @@ section {
 }
 
 /* =========================
-   Work experience
+   Work Experience
    ========================= */
 
-.job-title {
-  font-size: 12pt;
-  font-weight: bold;
-  color: #c00000;
-  margin-top: 10px;
-  margin-bottom: 0;     /* no space below title */
-  line-height: 1.1;    /* THIS matters */
+/* FINAL spacing fix — overrides Word styles */
+h3 {
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
+  line-height: 1.1 !important;
 }
 
 .job-meta {
-  font-size: 11pt;
-  font-weight: bold;
-  margin-top: 2px;     /* small controlled gap */
-  margin-bottom: 4px;
-  line-height: 1.25;
+  margin-top: 2px !important;
+  margin-bottom: 4px !important;
+  line-height: 1.25 !important;
 }
 
-
-
+/* Company name bold, details normal */
 .job-meta .company {
   font-weight: 700; /* bold */
 }
