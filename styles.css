@@ -320,6 +320,14 @@ ul.achievements li {
    ========================= */
 
 @media print {
+   @media print {
+  .education-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+}
+
      /* Fix Education layout in print */
   .education-grid {
     display: block !important;
