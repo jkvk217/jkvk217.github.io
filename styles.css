@@ -216,3 +216,6 @@ a[href^="https://www.linkedin.com"]:after {
   font-size: 12pt;
   line-height: 1.5;
 }
+.summary em {
+  display: block;
+}
