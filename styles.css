@@ -392,12 +392,20 @@ ul.achievements li {
     margin: 0.75in;
   }
 
+/* =========================
+   Print-only overrides
+   ========================= */
+
+@media print {
+
   body {
     background: #fff;
     padding: 0;
     margin: 0;
     max-width: none;
     font-size: 11pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .WordSection1 {
@@ -406,6 +414,35 @@ ul.achievements li {
     padding: 0;
     background: #fff;
   }
+
+  h1, h2 {
+    color: #000 !important;
+    page-break-after: avoid;
+  }
+
+  h3.job-title {
+    color: #c00000 !important;
+    font-weight: bold;
+  }
+
+  p, ul, li {
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  .pdf-button-wrapper {
+    display: none !important;
+  }
+
+  @page {
+    margin: 0.75in;
+  }
+}
+
 
   h1, h2, h3 {
     color: #000 !important;
