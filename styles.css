@@ -279,3 +279,7 @@ h3 {
 h3.job-title + p.job-meta {
   margin-top: 2px !important;
 }
+/* Kill default UL spacing under job-meta */
+.job-meta + ul {
+  margin-top: 2px !important;
+}
