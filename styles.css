@@ -165,6 +165,9 @@ h3.job-title {
   width: 1px;
   background-color: #999;
 }
+.education-item.high-school {
+  padding-left: 12px;   /* 👈 adjust this number */
+}
 
 /* =========================
    Download button
