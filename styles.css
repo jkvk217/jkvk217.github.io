@@ -101,7 +101,7 @@ section {
   font-weight: bold;
   color: #c00000;
   margin-top: 10px;
-  margin-bottom: 2px;   /* tight space below title */
+  margin-bottom: 0px;   /* tight space below title */
 }
 
 .job-meta {
