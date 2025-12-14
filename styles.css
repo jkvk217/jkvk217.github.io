@@ -132,3 +132,15 @@ body {
 .download-btn:active {
   transform: translateY(0);
 }
+.roles {
+  margin-left: 1.5rem;     /* pushes bullets right */
+}
+
+.achievements {
+  margin-left: 0;
+}
+
+.roles li,
+.achievements li {
+  padding-left: 0.25rem;   /* aligns text after bullet */
+}
