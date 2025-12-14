@@ -358,3 +358,23 @@ ul.achievements {
 .job-meta + ul {
   margin-top: 2px !important;
 }
+/* ===== Fix spacing between role list and achievement list ===== */
+
+/* Remove default spacing from list items */
+ul.roles li,
+ul.achievements li {
+  margin-top: 0 !important;
+  margin-bottom: 2px !important;
+  line-height: 1.25;
+}
+
+/* Kill extra space between the two lists */
+ul.roles {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+ul.roles + ul.achievements {
+  margin-top: 2px !important;
+  padding-top: 0 !important;
+}
