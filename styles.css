@@ -281,6 +281,26 @@ ul.achievements {
    ========================= */
 
 @media print {
+  /* Ensure colors print correctly */
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Section headings stay black */
+  h1,
+  h2 {
+    color: #000 !important;
+  }
+
+  /* Job titles print red */
+  h3.job-title {
+    color: #c00000 !important;
+    font-weight: bold;
+  }
+}
+
+
   @page {
     margin: 0.75in;
   }
