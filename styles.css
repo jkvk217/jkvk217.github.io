@@ -121,11 +121,16 @@ h3.job-title {
   margin-left: 1.5rem;
 }
 /* Tighten role bullets (AutoZone section) */
+/* AutoZone role bullets — indented & styled */
 ul.roles {
-  margin-top: 4px !important;
-  margin-bottom: 6px !important;
-  padding-left: 18px !important;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  padding-left: 32px;   /* ⬅ pushes bullets right */
 }
+ul.roles {
+  list-style-type: circle;
+}
+
 
 ul.roles li {
   margin-bottom: 2px !important;
