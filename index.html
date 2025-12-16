@@ -227,6 +227,16 @@
     document.body.classList.toggle('dark-mode');
   });
 </script>
+<script>
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const downloadBtn = document.querySelector('.download-btn');
+
+  if (isMobile && downloadBtn) {
+    downloadBtn.textContent = 'Open PDF';
+    downloadBtn.removeAttribute('download');
+  }
+</script>
+</body>
 
 
   </body>
