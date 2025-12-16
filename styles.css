@@ -281,10 +281,11 @@ ul.roles li::before {
     page-break-after: avoid;
   }
 
-  h3.job-title,
-  .edu-level {
-    color: #c00000 !important;
-  }
+h3.job-title {
+  color: #c00000 !important;
+  font-style: italic !important;
+}
+
 
   p, ul, li {
     page-break-inside: avoid;
