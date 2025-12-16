@@ -231,55 +231,35 @@ ul.roles li::before {
 
 .education-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 48px;
   margin-top: 10px;
 }
 
 .education-item {
   flex: 1;
+  line-height: 1.35;
 }
-.education-item .education-title {
+
+/* Titles align perfectly */
+.education-title {
   margin: 0 0 2px 0;
 }
 
-/* CRITICAL: normalize column start */
-.education-item > *:first-child {
-  margin-top: 0 !important;
-}
-
-.education-title {
-  margin-top: 0;
+/* Meta text */
+.edu-meta {
+  font-size: 11pt;
+  color: #000;
+  margin: 0;
 }
 
 /* Stack on mobile */
 @media (max-width: 600px) {
   .education-grid {
-    grid-template-columns: 1fr;
-    row-gap: 12px;
+    flex-direction: column;
+    gap: 12px;
   }
 }
-
-
-.education-divider {
-  width: 1px;
-  background-color: #999;
-}
-
-.education-item {
-  line-height: 1.35;
-}
-
-.edu-meta {
-  font-size: 11pt;
-  color: #000;
-}
-
-/* Mobile: stack */
-@media (max-width: 600px) {
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
 
 /* =========================
    DOWNLOAD BUTTON (SCREEN ONLY)
