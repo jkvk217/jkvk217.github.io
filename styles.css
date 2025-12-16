@@ -381,49 +381,50 @@ body.dark-mode .download-btn:hover {
 
 @media print {
 
+  /* Page margins — THIS is the only place margins should live */
+  @page {
+    margin: 0.75in;
+  }
+
   body {
-    background: #fff;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    background: #fff;
     font-size: 11pt;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  .WordSection1 {
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    background: #fff;
+  /* Resume container */
+  main {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;   /* critical */
+    margin: 0 !important;
+    background: #fff !important;
   }
 
-  h1, h2 {
-    color: #000 !important;
+  /* Headings */
+  h1, h2, h3 {
     page-break-after: avoid;
   }
 
-h3.job-title {
-  color: #c00000 !important;
-  font-style: italic !important;
-}
+  h3.job-title {
+    color: #c00000 !important;
+    font-style: italic !important;
+  }
 
-
+  /* Prevent awkward breaks */
   p, ul, li {
     page-break-inside: avoid;
-   
   }
 
   a {
     color: #000 !important;
     text-decoration: none;
   }
-.section {
-  margin-bottom: 2rem;
-}
-  .pdf-button-wrapper {
-    display: none !important;
-  }
 
+  /* Education layout fix */
   .education-grid {
     display: block;
   }
@@ -432,10 +433,12 @@ h3.job-title {
     margin-bottom: 10px;
   }
 
-  @page {
-    margin: 0.75in;
+  /* Hide screen-only elements */
+  .pdf-button-wrapper {
+    display: none !important;
   }
 }
+
 /* =========================
    DARK MODE OVERRIDES
    ========================= */
