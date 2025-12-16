@@ -1,4 +1,4 @@
-/* =========================
+ /* =========================
    RESET / BASE
    ========================= */
 
@@ -83,7 +83,7 @@ main {
 
 .section-divider {
   border-bottom: 1px solid #000;
-  margin: 10px 0 12px;
+  margin: 10px 0 6px;
 }
 
 section {
