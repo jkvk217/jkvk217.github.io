@@ -140,6 +140,33 @@ h3.job-title {
   font-weight: 700;
   font-style: italic;
 }
+/* Tighten spacing under company name */
+.job-meta {
+  margin-top: 0;
+  margin-bottom: 4px;
+  line-height: 1.15;
+}
+
+/* Roles list (italic, no bullets, indented) */
+ul.roles {
+  list-style: none;
+  padding-left: 36px; /* ~¼ inch */
+  margin: 2px 0 4px 0;
+}
+
+ul.roles li {
+  font-style: italic;
+  font-size: 10pt;
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+
+/* Main job bullets */
+ul.job-bullets {
+  margin: 4px 0 8px 0;
+  padding-left: 38px;
+}
+
 /* Education title formatting 
 .education-title .edu-degree {
   color: #c00000;
