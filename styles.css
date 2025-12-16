@@ -476,6 +476,9 @@ body.dark-mode .download-btn {
 }
 
 body.dark-mode .download-btn:hover {
+  background-color: #374151;
+  color: #fecaca;
+}
 
 /* =========================
    DARK MODE: CONTACT LINE
