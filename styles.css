@@ -159,7 +159,12 @@ ul.job-bullets {
   font-style: italic;
 }
 
-.education-title .edu-program {
+.education-title {
+  color: #000;
+  font-weight: 400;
+  font-style: italic;
+}
+.edu-program {
   color: #000;
   font-weight: 400;
   font-style: italic;
