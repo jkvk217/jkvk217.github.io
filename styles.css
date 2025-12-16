@@ -234,16 +234,15 @@ ul.roles li::before {
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
   margin-top: 10px;
-  align-items: start;
-}
-.education-grid {
   margin-bottom: 20px;
 }
-.education-item {
-  line-height: 1.35;
-  align-self: start; /* 🔑 forces top alignment */
-}
 
+.education-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.35;
+}
 
 /* Stack on mobile */
 @media (max-width: 600px) {
