@@ -80,13 +80,13 @@ main {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-style: italic;
-  margin: 16px 0 6px;
+  margin: 16px 0 2px;
   color: #000;
 }
 
 .section-divider {
   border-bottom: 1px solid #000;
-  margin: 0px 0 6px;
+  margin: 0px 0 2px;
 }
 
 section {
@@ -181,40 +181,10 @@ ul.job-bullets {
   flex-direction: column;
   align-items: flex-start; /* key */
 }
-*/
-/* Education meta (school, location, dates) */
-/*.edu-meta {
-  font-size: 11pt;
-  font-style: italic;
-  line-height: 1.15;
-  margin: 0;
-  color: #000;
-}
-/* Default bullet lists (job bullets) */
-/*ul {
-  margin: 4px 0 8px 0;
-  padding-left: 38px; /* ~¼ inch indent */
-/*}
-.edu-school {
-  font-style: normal;
-}
-.edu-meta + .edu-meta {
-  margin-top: 6px;
-}
-.education-item {
-  margin-top: 6px;
-}
-
-.education-item:first-child {
-  margin-top: 0;
-}
-
-*/
-/* Roles list (no bullets, indented, small) */
 
 ul.roles {
  /* list-style: none;*/
-  padding-left: 36px; /* ~¼ inch */
+  padding-left: 36px; /* ~1/2 inch */
   margin: 2px 0 0 0;
 }
 ul.roles li {
