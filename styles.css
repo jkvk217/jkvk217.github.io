@@ -296,20 +296,21 @@ ul.roles li {
 .theme-toggle {
   display: inline-block;
   min-width: 110px;
-  padding: 6px 14px;        /* ↓ slimmer vertical + horizontal */
+  padding: 6px 14px;
   font-family: Bahnschrift, Arial, sans-serif;
-  font-size: 13px;          /* ↓ from 16px */
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.4px;    /* ↓ tighter */
+  letter-spacing: 0.4px;
   line-height: 1.2;
-  color: #8b0000;
-  background-color: #d1d5db;
-  text-decoration: none;
   border-radius: 5px;
   border: 1px solid #9ca3af;
   cursor: pointer;
+  text-decoration: none;
   white-space: nowrap;
+  background-color: #d1d5db;
+  color: #8b0000;
 }
+
 
 /* Hover */
 .download-btn:hover,
