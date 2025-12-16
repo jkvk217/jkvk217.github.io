@@ -18,7 +18,7 @@ body {
    RESUME CARD (SCREEN)
    ========================= */
 
-.WordSection1 {
+main {
   max-width: 850px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -145,17 +145,6 @@ ul.roles li::before {
   margin-right: 6px;
 }
 
-/* Achievement bullets */
-
-ul.achievements {
-  margin: 4px 0 0 0;
-}
-
-ul.achievements li {
-  line-height: 1.35;
-  margin-bottom: 4px;
-}
-
 /* =========================
    EDUCATION
    ========================= */
@@ -219,7 +208,7 @@ ul.achievements li {
    ========================= */
 
 .pdf-button-wrapper {
-  text-align: centerig;
+  text-align: center;
   margin: 28px 0 12px;
 }
 
