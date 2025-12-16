@@ -248,7 +248,6 @@ ul.roles li {
    ========================= */
 
 .education-grid {
-   padding-left: 18px;     /* ~¼ inch */
   display: flex;
   text-align: center;
   align-items: flex-start;
