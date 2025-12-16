@@ -247,7 +247,8 @@ ul.roles li {
    EDUCATION
    ========================= */
 
-.education-grid {
+.education-grid {   
+     margin-right: 12; 
   display: flex;
   text-align: center;
   align-items: flex-start;
@@ -278,7 +279,6 @@ ul.roles li {
 /* Stack on mobile */
 @media (max-width: 600px) {
   .education-grid {
-     margin-right: 12; 
     flex-direction: column;
     gap: 12px;
   }
