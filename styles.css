@@ -225,11 +225,13 @@ ul.roles li {
 
 .job-meta .company {
   font-weight: 700;
+  margin-bottom: 0;       /* critical: removes gap under title */
 }
 
 .job-meta .details,
 .job-meta .via {
   font-weight: 400;
+  margin-bottom: 0;       /* critical: removes gap under title */
 }
 
 /* Role list (dashed, indented, italic) */
