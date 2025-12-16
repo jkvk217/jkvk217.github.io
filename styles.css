@@ -126,8 +126,8 @@ h3.job-title {
 
 .job-meta {
   font-size: 11pt;
-  margin: 2px 0 4px 0;
-  line-height: 1.25;
+  line-height: 1.1;   /* tighter line spacing */
+  margin: 1px 0 2px 0;
 }
 
 .job-meta .company {
