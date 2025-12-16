@@ -260,6 +260,21 @@ ul.roles li::before {
     gap: 12px;
   }
 }
+.education-title {
+  line-height: 1.1;
+  margin: 0 0 2px 0;
+}
+
+.edu-meta {
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Force identical spacing above dates */
+.edu-meta br {
+  display: block;
+  margin-top: 2px;
+}
 
 /* =========================
    DOWNLOAD BUTTON (SCREEN ONLY)
