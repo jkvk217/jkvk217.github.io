@@ -154,22 +154,26 @@ ul.job-bullets {
 
 /** Education title formatting */
 .education-title .edu-degree {
+   text-align: center;
   color: #c00000;
   font-weight: 700;
   font-style: italic;
 }
 
 .education-title {
+   text-align: center;
   color: #000;
   font-weight: 400;
   font-style: italic;
 }
 .edu-program {
+   text-align: center;
   color: #000;
   font-weight: 400;
   font-style: italic;
 }
 .education-item {
+   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* key */
@@ -243,6 +247,7 @@ ul.roles li {
    ========================= */
 
 .education-grid {
+   padding-left: 36px;     /* ~¼ inch */
   display: flex;
   text-align: center;
   align-items: flex-start;
