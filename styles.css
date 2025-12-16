@@ -134,7 +134,7 @@ h3.job-title {
   margin-bottom: 4px;
   line-height: 1.15;
 }
-/* Education title formatting */
+/* Education title formatting 
 .education-title .edu-degree {
   color: #c00000;
   font-weight: 700;
@@ -146,9 +146,9 @@ h3.job-title {
   font-weight: 400;
   font-style: italic;
 }
-
+*/
 /* Education meta (school, location, dates) */
-.edu-meta {
+/*.edu-meta {
   font-size: 11pt;
   font-style: italic;
   line-height: 1.15;
@@ -156,10 +156,10 @@ h3.job-title {
   color: #000;
 }
 /* Default bullet lists (job bullets) */
-ul {
+/*ul {
   margin: 4px 0 8px 0;
   padding-left: 38px; /* ~¼ inch indent */
-}
+/*}
 .edu-school {
   font-style: normal;
 }
@@ -178,7 +178,7 @@ ul {
   flex-direction: column;
   align-items: flex-start; /* key */
 }
-
+*/
 /* Roles list (no bullets, indented, small) */
 ul.roles {
   list-style: none;
