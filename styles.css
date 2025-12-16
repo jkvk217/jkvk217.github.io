@@ -163,6 +163,9 @@ ul {
 .edu-school {
   font-style: normal;
 }
+.edu-meta + .edu-meta {
+  margin-top: 6px;
+}
 
 /* Roles list (no bullets, indented, small) */
 ul.roles {
