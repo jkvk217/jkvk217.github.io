@@ -141,14 +141,9 @@ h3.job-title {
 
 /* Role list (dashed, indented, italic) */
 
-ul.roles {
-  list-style: none;
-  padding-left: 32px;
-  margin: 4px 0 6px 0;
-}
-
 ul.roles li {
   font-style: italic;
+  font-size: 10pt;
   line-height: 1.25;
   margin-bottom: 2px;
 }
