@@ -146,10 +146,8 @@ h3.job-title {
   color: #000;
 }
 
-/* Bullet spacing consistency */
 ul {
-  margin: 4px 0 8px 0;
-  padding-left: 20px;
+  margin-top: 2px;
 }
 
 /* Roles list (no bullets, indented, small) */
