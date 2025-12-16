@@ -311,6 +311,34 @@ ul.roles li {
   background-color: #e5e7eb;
   color: #b91c1c;
 }
+/* Action buttons container */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;   /* 🔑 prevents jumping */
+}
+
+/* Mobile: allow wrap BUT keep alignment consistent */
+@media (max-width: 600px) {
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+/* Theme toggle button (if not already styled) */
+.theme-toggle {
+   white-space: nowrap;
+  padding: 12px 18px;
+  font-family: Bahnschrift, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid #9ca3af;
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
 
 /* =========================
    MOBILE
