@@ -118,6 +118,10 @@ h3.job-title,
   margin: 0 0 2px 0;
 }
 
+h3.job-title {
+  font-style: italic;
+}
+
 .job-meta {
   font-size: 11pt;
   margin: 2px 0 4px 0;
