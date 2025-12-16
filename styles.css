@@ -152,7 +152,7 @@ ul.job-bullets {
   padding-left: 38px;
 }
 
-/* Education title formatting 
+/** Education title formatting */
 .education-title .edu-degree {
   color: #c00000;
   font-weight: 700;
