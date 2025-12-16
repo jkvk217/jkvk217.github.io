@@ -218,6 +218,7 @@
     <a class="download-btn" href="Jack_Vink_CV.pdf"download>Download PDF</a>
     <a class="download-btn" href="Jack_Vink_CV.pdf">View PDF</a>
     <button class="theme-toggle">Dark Mode</button>
+    <button class="download-btn share-btn" id="shareBtn">Share</button>
   </div>
 </div>
 
@@ -228,6 +229,31 @@
   toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
   });
+</script>
+<script>
+  const shareBtn = document.getElementById('shareBtn');
+
+  if (navigator.share) {
+    shareBtn.addEventListener('click', async () => {
+      try {
+        await navigator.share({
+          title: 'Jack Vink – Resume',
+          text: 'View or download my resume',
+          url: 'https://jkvk217.github.io/Jack_Vink_CV.pdf'
+        });
+      } catch (err) {
+        // user canceled — do nothing
+      }
+    });
+  } else {
+    // Fallback: copy link
+    shareBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(
+        'https://jkvk217.github.io/Jack_Vink_CV.pdf'
+      );
+      alert('Link copied to clipboard');
+    });
+  }
 </script>
 
 
