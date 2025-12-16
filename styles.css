@@ -194,14 +194,15 @@ ul.roles li {
   margin-bottom: 2px;
 }
 
-/*
+
 .job-meta .company {
   font-weight: 700;
   margin-bottom: 0;       /* critical: removes gap under title */
 }
-/*
+
 .job-meta .details,
 .job-meta .via {
+   font-style: italic;
   font-weight: 400;
   margin-bottom: 1;       /* critical: removes gap under title */
 }
