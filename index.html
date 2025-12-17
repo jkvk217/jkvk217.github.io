@@ -21,12 +21,13 @@
         aria-label="Toggle dark mode">
         Dark Mode
       </button>
-      <button
-        class="download-btn share-btn"
-        type="button"
-        aria-label="Share">
-        Share
-      </button>
+  <button
+  class="download-btn share-btn"
+  type="button"
+  aria-label="Share">
+  Share
+</button>
+
     </div>
   </div> 
 
@@ -246,13 +247,13 @@
       type="button"
       aria-pressed="false"
       aria-label="Toggle dark mode">Dark Mode</button>
- <button
+<button
   class="download-btn share-btn"
-  id="shareBtn"
   type="button"
   aria-label="Share">
   Share
 </button>
+
 
   </div>
 </div>
@@ -268,10 +269,10 @@
 </script>
 
 <script>
-  const shareBtn = document.getElementById('shareBtn');
+  const shareButtons = document.querySelectorAll('.share-btn');
 
-  if (shareBtn) {
-    shareBtn.addEventListener('click', async () => {
+  shareButtons.forEach(btn => {
+    btn.addEventListener('click', async () => {
       const shareData = {
         title: 'Jack Vink – Resume',
         text: 'View or download my resume',
@@ -282,19 +283,21 @@
         try {
           await navigator.share(shareData);
         } catch (err) {
-          // user canceled — do nothing
+          // user cancelled — no action needed
         }
       } else {
         // Fallback: copy link
         navigator.clipboard.writeText(shareData.url);
-        shareBtn.textContent = 'Link Copied';
+        const originalText = btn.textContent;
+        btn.textContent = 'Link Copied';
         setTimeout(() => {
-          shareBtn.textContent = 'Share';
+          btn.textContent = originalText;
         }, 1500);
       }
     });
-  }
+  });
 </script>
+
 
 
 
