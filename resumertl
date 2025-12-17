@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jack Vink CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<main>
+<header class="resume-header">
+  <div class="pdf-button-wrapper top-buttons">
+    <div class="action-buttons">
+      <a class="download-btn" href="Jack_Vink_CV.pdf" download>Download PDF</a>
+      <a class="download-btn" href="Jack_Vink_CV.pdf">View PDF</a>
+      <button
+        class="download-btn theme-toggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Toggle dark mode">
+        Dark Mode
+      </button>
+<button
+  class="download-btn share-btn"
+  type="button"
+  aria-label="Share resume">
+  Share
+</button>
+
+    </div>
+  </div> 
+
+  <h1 class="name">Jack H. Vink</h1>
+  <!-- contact line goes here -->
+</header>
+
+
+  <!-- rest of resume -->
+
+
+<p class="contact-line">
+  <a href="mailto:jackhvink@gmail.com" class="accent-link">
+    <i>jackhvink@gmail.com</i>
+  </a>
+  <span class="divider">•</span>
+
+  <a href="tel:217-953-4486">217-953-4486</a>
+
+  <span class="divider">•</span>
+
+  <a href="https://www.linkedin.com/in/jackvink/"
+     class="accent-link"
+     target="_blank"
+     rel="noopener noreferrer">
+    <i>LinkedIn.com/in/jackvink</i>
+  </a>
+</p>
+
+
+<hr class="subtle-divider">
+  
+<p class="summary">
+  <em>
+    Detail-oriented professional with experience in customer service,
+    technical support, and workflow coordination. Known for clear communication, accuracy, and reliability.
+  </em>
+</p>
+
+<div class="section-heading">PROFESSIONAL EXPERIENCE</div>
+
+<hr class="subtle-divider">
+
+<h3 class="job-title">Technical Services Representative</h3>
+
+<p class="job-meta">
+  <span class="company">Bunn-O-Matic Corporation</span> |
+  <span class="details">Springfield, IL | Jan 2025 – May 2025</span>
+</p>
+
+<ul>
+  <li>Provided technical support to field technicians for commercial beverage equipment.</li>
+  <li>Interpreted complex wiring schematics and technical manuals to deliver accurate solutions.</li>
+  <li>Documented interactions and resolutions using Salesforce CRM.</li>
+</ul>
+
+
+<h3 class="job-title">Automotive Service Advisor</h3>
+
+<p class="job-meta">
+  <span class="company">1 Stop Auto Shop, Inc.</span> |
+  <span class="details">
+    Springfield, IL | Feb 2011 – Aug 2016;
+    <em>Returned</em> Feb 2024 – Dec 2024
+  </span>
+</p>
+
+
+<ul>
+  <li>Managed shop workflow, inventory, and scheduling to support productivity and service quality.</l>
+  <li>Prepared service estimates, sourced parts, and documented vehicle concerns in repair orders.</li>
+  <li>Coordinated with technicians to review diagnostics and explain recommendations to customers.</li>
+  <li>Managed approvals, payments, scheduling, and follow-up to ensure customer satisfaction.</li>
+</ul>
+
+
+<h3 class="job-title">Remote Support Specialist</h3>
+
+<p class="job-meta">
+  <span class="company">Star Micronics America, Inc.</span> |
+  <span class="details">Remote | Feb 2023 – Dec 2023</span>
+</p>
+
+
+<ul>
+  <li>Provided remote technical support for Star Micronics printers via phone, email, and chat.</li>
+  <li>Troubleshot printer and basic operating system issues across Windows, macOS, and Linux.</li>
+  <li>Created instructional guides to support customer self-service and reduce repeat contacts.</li>
+</ul>
+
+
+<h3 class="job-title">Multimedia Specialist</h3>
+
+<p class="job-meta">
+  <span class="company">Elevate CCIC, Inc.</span> |
+  <span class="details">Mattoon, IL | Mar 2020 – Jun 2021</span>
+</p>
+
+
+<ul>
+  <li>Led a website redesign to improve navigation, consistency, and user experience.</li>
+  <li>Managed a site migration to improve performance, scalability, and asset organization.</li>
+  <li>Created digital marketing content using Adobe Creative Suite for web, social, and print.</li>
+  <li>Converted forms to fillable PDFs, streamlining document management processes.</li>
+</ul>
+
+
+<h3 class="job-title">Technical Support Representative</h3>
+
+<p class="job-meta">
+  <span class="company">Apple, Inc.</span>
+  <span class="via"><em>(via Conduent Incorporated &amp; Kelly Services)</em></span> |
+  <span class="details">Remote | Dec 2017 – Dec 2019</span>
+</p>
+
+
+
+<ul>
+  <li>Provided phone-based technical support for Apple customers in a high-volume virtual call center.</li>
+  <li>Troubleshot hardware, software, and Apple ID issues.</li>
+  <li>Explained steps clearly and empathetically to users of all skill levels, maintaining detailed case notes.</li>
+</ul>
+
+
+<h3 class="job-title">Electronics Repair Technician</h3>
+
+<p class="job-meta">
+  <span class="company">Rapid Repair</span> |
+  <span class="details">Springfield, IL | Jun 2015 – Dec 2017</span>
+</p>
+
+
+
+<ul>
+  <li>Oversaw daily shop operations, ensuring quality diagnostics, repairs, and device testing.</li>
+  <li>Trained staff on repair procedures, customer service standards, and new device technologies.</li>
+  <li>Managed inventory, scheduling, and vendor relationships while maintaining strong customer satisfaction.</li>
+</ul>
+
+
+<h3 class="job-title">Quality Assurance Specialist</h3>
+
+<p class="job-meta">
+  <span class="company">Horace Mann Insurance</span> |
+  <span class="details">Springfield, IL | Jan 2013 – Oct 2014</span>
+</p>
+
+
+<ul>
+  <li>Assisted in developing and refining quality assurance and audit procedures.</li>
+  <li>Evaluated communications, documentation, and data entry for accuracy and compliance.</li>
+  <li>Analyzed workflows to improve efficiency and recommend process changes.</li>
+  <li>Supported customers and insurance agents through multiple communication channels.</li>
+  <li>Researched, explained, and resolved Property & Casualty policy questions.</li>
+  <li>Adapted quickly to new products, systems, and procedures.</li>
+</ul>
+
+
+<h3 class="job-title">Automotive Retail Specialist</h3>
+
+<p class="job-meta">
+  <span class="company">AutoZone, Inc.</span> |
+  <span class="details">Springfield, IL | Oct 2007 – Feb 2011</span>
+</p>
+
+
+
+<ul class="roles">
+  <li><em>Warehouse Coordinator</em> (Oct 2008 – Feb 2011)</li>
+  <li><em>Parts Sales Manager</em> (Mar 2008 – Oct 2008)</li>
+  <li><em>Customer Service Representative</em> (Oct 2007 – Mar 2008)</li>
+</ul>
+
+<ul class="job-bullets">
+  <li>Supervised warehouse and retail operations, including staffing, scheduling, and workflow coordination.</li>
+  <li>Managed order fulfillment, inventory control, route planning, and fleet maintenance.</li>
+  <li>Provided customer service and sales support to drive store performance.</li>
+  <li>Recognized for reliability, a positive attitude, and consistently high-quality work.</li>
+</ul>
+
+
+<section>
+  <h2 class="section-heading">EDUCATION</h2>
+  <hr class="subtle-divider">
+
+  <div class="education-grid">
+    <div class="education-item">
+      <div class="education-title">
+        <span class="edu-degree">High School</span> – General Studies (Diploma)
+      </div>
+      <div class="edu-meta">
+        Lawrence Education Center | <em>Springfield, IL</em><br>
+        2004–2006
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-title">
+        <span class="edu-degree">Trade School</span> – Communications & Media Design
+      </div>
+      <div class="edu-meta">
+        Capital Area Career Center | <em>Springfield, IL</em><br>
+        2005–2006
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pdf-button-wrapper">
+  <div class="action-buttons">
+    <a class="download-btn" href="Jack_Vink_CV.pdf" download>Download PDF</a>
+    <a class="download-btn" href="Jack_Vink_CV.pdf">View PDF</a>
+    <button
+      class="download-btn theme-toggle"
+      type="button"
+      aria-pressed="false"
+      aria-label="Toggle dark mode">Dark Mode</button>
+<button
+  class="download-btn share-btn"
+  type="button"
+  aria-label="Share resume">
+  Share
+</button>
+
+
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButtons = document.querySelectorAll('.theme-toggle');
+
+    if (!toggleButtons.length) return;
+
+    const updateButtons = (isDark) => {
+      toggleButtons.forEach(btn => {
+        btn.setAttribute('aria-pressed', isDark);
+        btn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+      });
+    };
+
+    toggleButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isDark = document.body.classList.toggle('dark-mode');
+        updateButtons(isDark);
+      });
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const shareButtons = document.querySelectorAll('.share-btn');
+
+    if (!shareButtons.length) return;
+
+    shareButtons.forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const shareData = {
+          title: 'Jack Vink – Resume',
+          text: 'View or download my resume',
+          url: window.location.href
+        };
+
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+          } catch (err) {
+            // user canceled — no action
+          }
+        } else {
+          // Fallback: copy link
+          navigator.clipboard.writeText(shareData.url);
+          btn.textContent = 'Link Copied';
+
+          setTimeout(() => {
+            btn.textContent = 'Share';
+          }, 1500);
+        }
+      });
+    });
+  });
+</script>
+
+  </body>
+</html>
