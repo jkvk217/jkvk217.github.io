@@ -23,7 +23,7 @@ body {
 
 .pdf-button-wrapper.top-buttons {
   margin-top: 0;        /* removes extra space above */
-  margin-bottom: 10px; /* keeps breathing room below */
+  margin-bottom: 20px; /* keeps breathing room below */
 }
  
 /* =========================
