@@ -141,7 +141,7 @@ h3.job-title {
 
 /* Company + location + dates */
 .job-meta {
-  margin: 0;                 /* hard reset */
+  margin: 10;                 /* hard reset */
   line-height: 1.15;
 }
 
