@@ -40,9 +40,7 @@ main {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-main {
-  color: #000;
-}
+
 /* =========================
    NAME / HEADER
    ========================= */
@@ -142,7 +140,6 @@ h3.job-title {
   margin-top: 8px;
   margin-bottom: 0;          /* removes gap under title */
   font-style: italic;
-  color: #c00000;
 }
 
 /* Company + location + dates */
