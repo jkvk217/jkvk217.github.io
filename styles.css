@@ -91,13 +91,13 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   font-style: italic;
-  margin: 16px 0 0px;
+  margin: 12px 0 0px;
   color: #000;
 }
 
 .section-divider {
   border-bottom: 1px solid #000;
-  margin: 0px 0 2px;
+  margin: 0px 0 8px;
 }
 
 section {
