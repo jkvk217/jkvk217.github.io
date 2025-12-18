@@ -91,14 +91,16 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   font-style: italic;
-  margin: 12px 0 0px;
+  line-height: .95;        /* 🔑 THIS is the fix */
+  margin: 16px 0 0;
   color: #000;
 }
 
 .section-divider {
   border-bottom: 1px solid #000;
-  margin: 0px 0 8px;
+  margin: 2px 0 8px;     /* tiny breathing room only */
 }
+
 
 section {
   margin-bottom: 1.5em;
