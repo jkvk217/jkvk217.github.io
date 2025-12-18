@@ -386,7 +386,7 @@ body.dark-mode .section-divider {
 
 body.dark-mode h3.job-title,
 body.dark-mode .edu-degree {
-  color: #f87171; /* soft red */
+/*  color: #f87171; /* soft red */
 }
 
 body.dark-mode a {
