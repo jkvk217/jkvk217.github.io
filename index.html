@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Jack H. Vink</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Jack H. Vink - Resume">
+  <meta property="og:description" content="Detail-oriented professional with experience in customer service, technical support, and workflow coordination.">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,8 +16,8 @@
     <div class="action-buttons">
       <a class="download-btn" href="Jack_Vink_Resume_Full.pdf" download>Download PDF</a>
       <a class="download-btn" href="Jack_Vink_Resume_Full.pdf">View PDF</a>
-      <button class="download-btn theme-toggle"type="button"aria-pressed="false"aria-label="Toggle dark mode">Dark Mode</button>
-      <button class="download-btn share-btn"type="button"aria-label="Share resume">Share</button>
+      <button class="download-btn theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">Dark Mode</button>
+      <button class="download-btn share-btn" type="button" aria-label="Share resume">Share</button>
     </div>
   </div> 
 
@@ -27,17 +29,15 @@
   </a>
   <span class="divider">•</span>
 
-  <a href="tel:217-953-4486"class="accent-link">217-953-4486</a>
+  <a href="tel:217-953-4486" class="accent-link">217-953-4486</a>
   
  <span class="divider">•</span> 
 
-  <a href="https://www.linkedin.com/in/jackvink/"class="accent-link"target="_blank"rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/jackvink/" class="accent-link" target="_blank" rel="noopener noreferrer">
     <i>LinkedIn.com/in/jackvink</i>
   </a>
 </p>
 </header>
-
-<!-- <hr class="subtle-divider"> -->
   
 <p class="summary">
   <em>
@@ -74,7 +74,7 @@
 
 
 <ul>
-  <li>Managed shop workflow, inventory, and scheduling to support productivity and service quality.</l>
+  <li>Managed shop workflow, inventory, and scheduling to support productivity and service quality.</li>
   <li>Prepared service estimates, sourced parts, and documented vehicle concerns in repair orders.</li>
   <li>Coordinated with technicians to review diagnostics and explain recommendations to customers.</li>
   <li>Managed approvals, payments, scheduling, and follow-up to ensure customer satisfaction.</li>
@@ -168,13 +168,6 @@
 </p>
 
 
-
-<!--<ul class="roles">
-  <li><em>Warehouse Coordinator</em> (Oct 2008 – Feb 2011)</li>
-  <li><em>Parts Sales Manager</em> (Mar 2008 – Oct 2008)</li>
-  <li><em>Customer Service Representative</em> (Oct 2007 – Mar 2008)</li>
-</ul> -->
-
 <ul class="job-bullets">
   <li>Advanced through customer service and warehouse coordination roles within a retail environment, overseeing staffing, scheduling, and workflow operations.</li>
   <li>Managed order fulfillment, inventory control, route planning, and fleet maintenance.</li>
@@ -212,19 +205,24 @@
     <div class="action-buttons">
       <a class="download-btn" href="Jack_Vink_Resume_Full.pdf" download>Download PDF</a>
       <a class="download-btn" href="Jack_Vink_Resume_Full.pdf">View PDF</a>
-      <button class="download-btn theme-toggle"type="button"aria-pressed="false"aria-label="Toggle dark mode">Dark Mode</button>
-      <button class="download-btn share-btn"type="button"aria-label="Share resume">Share</button>
+      <button class="download-btn theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">Dark Mode</button>
+      <button class="download-btn share-btn" type="button" aria-label="Share resume">Share</button>
     </div>
-  </div> 
-
-
   </div>
-</div>
+
+</main>
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const toggleButtons = document.querySelectorAll('.theme-toggle');
 
     if (!toggleButtons.length) return;
+
+    // Check for saved preference
+    const savedMode = localStorage.getItem('darkMode');
+    if (savedMode === 'true') {
+      document.body.classList.add('dark-mode');
+    }
 
     const updateButtons = (isDark) => {
       toggleButtons.forEach(btn => {
@@ -233,9 +231,13 @@
       });
     };
 
+    // Initialize button text based on current mode
+    updateButtons(document.body.classList.contains('dark-mode'));
+
     toggleButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         const isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', isDark);
         updateButtons(isDark);
       });
     });
@@ -260,22 +262,32 @@
           try {
             await navigator.share(shareData);
           } catch (err) {
-            // user canceled — no action
+            // User canceled or error occurred - no action needed
+            if (err.name !== 'AbortError') {
+              console.error('Share failed:', err);
+            }
           }
         } else {
           // Fallback: copy link
-          navigator.clipboard.writeText(shareData.url);
-          btn.textContent = 'Link Copied';
-
-          setTimeout(() => {
-            btn.textContent = 'Share';
-          }, 1500);
+          try {
+            await navigator.clipboard.writeText(shareData.url);
+            btn.textContent = 'Link Copied!';
+            
+            setTimeout(() => {
+              btn.textContent = 'Share';
+            }, 1500);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+            btn.textContent = 'Copy Failed';
+            setTimeout(() => {
+              btn.textContent = 'Share';
+            }, 1500);
+          }
         }
       });
     });
   });
 </script>
 
-  </body>
+</body>
 </html>
-
