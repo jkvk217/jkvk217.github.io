@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 40px 16px;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background-color: #d3d7de;
+  background-color: #f3f4f6;
   color: #000;
 }
 
@@ -380,21 +380,30 @@ body.dark-mode a:hover {
 
 /* Buttons in dark mode */
 body.dark-mode .download-btn,
-body.dark-mode .theme-toggle,
 body.dark-mode .share-btn {
   background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
   box-shadow: 0 2px 8px rgba(34, 211, 238, 0.4);
 }
 
 body.dark-mode .download-btn:hover,
-body.dark-mode .theme-toggle:hover,
 body.dark-mode .share-btn:hover {
   background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
   box-shadow: 0 4px 12px rgba(34, 211, 238, 0.5);
 }
 
-/* Active state when dark mode is enabled */
+/* Theme toggle in dark mode - normal state (same as other buttons) */
 body.dark-mode .theme-toggle {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+  box-shadow: 0 2px 8px rgba(34, 211, 238, 0.4);
+}
+
+body.dark-mode .theme-toggle:hover {
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+  box-shadow: 0 4px 12px rgba(34, 211, 238, 0.5);
+}
+
+/* Active pressed state for theme toggle (optional visual feedback on click) */
+body.dark-mode .theme-toggle:active {
   background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
   box-shadow: 0 2px 8px rgba(8, 145, 178, 0.5), inset 0 1px 2px rgba(0,0,0,0.2);
 }
