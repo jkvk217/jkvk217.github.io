@@ -409,7 +409,7 @@ body.dark-mode .theme-toggle:active {
 @media print {
   /* Page margins */
   @page {
-    margin: 0.75in;
+    margin: 0..5in;
   }
 
   body {
