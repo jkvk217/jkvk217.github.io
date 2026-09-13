@@ -1,64 +1,68 @@
+/* =========================
+   RESET / BASE
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 0 16px;
+  margin: 0;
+  padding: 40px 16px;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
-h1, h2 {
-  margin-bottom: 0.4em;
-}
-
-section {
-  margin-bottom: 1.5em;
-}
-@media print {
-  body {
-    margin: 0;
-  }
-  a {
-    color: black;
-    text-decoration: none;
-  }
-}
-.job-title {
-  font-size: 12pt;
-  font-weight: bold;
-  color: #c00000; /* red */
-  margin-bottom: 2px;
+  background-color: #d3d7de;
+  color: #000;
 }
 
-.job-meta {
-  font-size: 11pt;
-  font-weight: bold;
-  color: #000; /* black */
+/* =========================
+   TOP BUTTONS (HEADER)
+   ========================= */
+
+.resume-header {
+  padding-top: 0;
+}
+
+.pdf-button-wrapper.top-buttons {
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
 }
-.print-btn {
-  margin-bottom: 12px;
-  padding: 6px 12px;
-  font-size: 11pt;
-  cursor: pointer;
-}
-}
-/* Education headings (High School / Trade School) */
-h3 {
-  color: #c00000;        /* red */
-  font-weight: bold;
-  margin-bottom: 4px;
+ 
+/* =========================
+   RESUME CARD (SCREEN)
+   ========================= */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* School name, location, dates */
-h3 .company,
-h3 .meta {
-  color: #000;           /* black */
-  font-weight: normal;
-  font-size: 11pt;
-}
-.contact-line {
+/* =========================
+   NAME / HEADER
+   ========================= */
+
+.name {
   text-align: center;
+  font-size: 18pt;
+  font-family: Bahnschrift, Arial, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  margin: 0 0 6px 0;
+}
+
+.contact-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-style: italic;
+  gap: 6px 10px;
   font-size: 11pt;
-  margin: 6px 0 14px 0;
+  margin: 6px 0 10px;
+  text-align: center;
 }
 
 .contact-line a {
@@ -70,216 +74,378 @@ h3 .meta {
   text-decoration: underline;
 }
 
-.contact-line .divider {
-  margin: 0 6px;
-}
-.education-line {
-  margin: 10 0 10px 0;
+.contact-line a.accent-link {
+  color: #1d4ed8;
 }
 
-.edu-level {
-  color: #c00000;   /* match job-title dark red */
-  font-weight: bold;
-  font-size: 12pt;
+.contact-line a.accent-link:hover {
+  text-decoration: underline;
 }
 
-.edu-detail {
-  color: #000;
-  font-weight: normal;
-  font-size: 11pt;
-}
-
-.edu-meta {
-  color: #000;
-  font-weight: normal;
-  font-size: 11pt;
-}
-body {
-  background-color: #ffffff; /* Light mode background */
-  color: #000000; /* Light mode text color */
-  transition: background-color 0.3s, color 0.3s;
-}
-/* Resume PDF download button */
-.pdf-button-wrapper {
-  text-align: center;
-  margin: 28px 0 12px;
-}
-
-.download-btn {
-  display: inline-block;
-  padding: 12px 26px;
-  font-family: Bahnschrift, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #8b0000;              /* dark red text */
-  background-color: #d1d5db;   /* medium gray */
-  text-decoration: none;
-  border-radius: 6px;
-  border: 1px solid #9ca3af;   /* subtle edge */
-  cursor: pointer;
-  transition: background-color 0.2s ease,
-              color 0.2s ease,
-              transform 0.1s ease;
-}
-
-.download-btn:hover {
-  background-color: #e5e7eb;   /* lighter gray */
-  color: #b91c1c;              /* brighter red */
-  transform: translateY(-1px);
-}
-
-.download-btn:active {
-  transform: translateY(0);
-}
-.roles {
-  margin-left: 1.5rem;     /* pushes bullets right */
-}
-
-.achievements {
-  margin-left: 0;
-}
-
-.roles li,
-.achievements li {
-  padding-left: 0.25rem;   /* aligns text after bullet */
-}
 /* =========================
-   Print-optimized resume
+   SECTION HEADINGS
    ========================= */
-@media print {
-a[href^="https://www.linkedin.com"]:after {
-  content: " (" attr(href) ")";
-  font-size: 10pt;
+
+.section-heading {
+  font-size: 12.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: .5;
+  margin: 16px 0 8px;
+  color: #000;
 }
 
-  /* Page setup */
-  @page {
-    margin: 0.75in;
-  }
-
-  body {
-    max-width: none;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #000;
-    font-size: 11pt;
-  }
-
-  /* Headings */
-  h1, h2, h3 {
-    color: #000 !important;
-    page-break-after: avoid;
-  }
-
-  /* Prevent awkward page breaks */
-  p, ul, li {
-    page-break-inside: avoid;
-  }
-
-  ul {
-    margin-bottom: 0.6em;
-  }
-
-  /* Contact links should look like text */
-  a {
-    color: #000 !important;
-    text-decoration: none;
-  }
-
-  /* Hide non-print elements */
-  .pdf-button-wrapper {
-    display: none !important;
-  }
-
-  /* Tighten spacing slightly for 1-page fit */
-  .job-title {
-    margin-top: 10px;
-  }
-
-  .job-meta {
-    margin-bottom: 4px;
-  }
-
-  /* HR lines print clean */
-  hr {
-    border: none;
-    border-top: 1px solid #000;
-    margin: 10px 0;
-  }
+.section-divider,
+.subtle-divider {
+  border-bottom: 1px solid #000;
+  margin: 8px 0 12px;
 }
+
+section {
+  margin-bottom: 1.5em;
+}
+
+/* =========================
+   SUMMARY
+   ========================= */
+
 .summary {
-  max-width: 650px;
+  max-width: 780px;
   margin: 12px auto;
   text-align: center;
   font-size: 12pt;
   line-height: 1.5;
 }
+
 .summary em {
   display: block;
 }
-.WordSection1 {
-  margin: 0 auto;
+
+/* =========================
+   WORK EXPERIENCE
+   ========================= */
+
+h3.job-title {
+  font-size: 12pt;
+  line-height: 1.1;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-style: italic;
 }
-.summary {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+
+.job-meta {
+  margin: 0;
+  line-height: 1.15;
 }
-.section-heading {
-  font-size: 13pt;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 18px 0 6px;
-  color: #000;
+
+.job-meta .company {
+  font-weight: 600;
+  margin-bottom: 0;
 }
-.section-divider {
-  border-bottom: 1px solid #000;
-  margin: 18px 0 8px;
+
+.job-meta .details,
+.job-meta .via {
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 0;
 }
-.contact-line {
+
+.job-meta + ul {
+  margin-top: 2px;
+}
+
+.job-meta + ul.roles {
+  margin-top: 2px;
+}
+
+/* Main job bullets */
+ul.job-bullets {
+  margin: 2px 0 0 0;
+  padding-left: 38px;
+}
+
+/* =========================
+   EDUCATION
+   ========================= */
+
+.education-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px 10px;
   text-align: center;
+  align-items: flex-start;
+  gap: 0px;
+  margin-top: 10px;
 }
+
+.education-item {
+  flex: 1;
+  line-height: 1.35;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-title {
+  text-align: center;
+  color: #000;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.1;
+  margin: 0 0 2px 0;
+}
+
+.edu-degree {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.edu-meta {
+  font-size: 11pt;
+  color: #000;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.edu-meta br {
+  display: block;
+  margin-top: 2px;
+}
+
+/* Stack on mobile */
 @media (max-width: 600px) {
+  .education-grid {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* =========================
+   DOWNLOAD BUTTON (SCREEN ONLY)
+   ========================= */
+
+.pdf-button-wrapper {
+  text-align: center;
+  margin: 28px 0 12px;
+}
+
+/* Action buttons container */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+/* Modern action buttons - subtle gray style */
+.download-btn,
+.theme-toggle,
+.share-btn {
+  display: inline-block;
+  min-width: 110px;
+  padding: 10px 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #76a5cc;
+  color: #374151;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover,
+.theme-toggle:hover,
+.share-btn:hover {
+  border-color: #d1d5db;
+  color: #d1d5db;
+  background-color: #696d70;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:active,
+.theme-toggle:active,
+.share-btn:active {
+  background-color: #f3f4f6;
+}
+
+.download-btn:focus-visible,
+.theme-toggle:focus-visible,
+.share-btn:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Mobile: allow wrap */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark-mode {
+  background-color: #0b0f1a;
+  color: #e5e7eb;
+}
+
+body.dark-mode main {
+  background-color: #020617;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+/* Section headings & dividers */
+body.dark-mode .section-heading,
+body.dark-mode h1,
+body.dark-mode h2 {
+  color: #f9fafb;
+}
+
+body.dark-mode .section-divider,
+body.dark-mode .subtle-divider {
+  border-color: #9ca3af;
+}
+
+/* Job titles */
+body.dark-mode h3.job-title {
+  color: #f9fafb;
+}
+
+/* Education */
+body.dark-mode .education-title {
+  color: #f9fafb;
+}
+
+body.dark-mode .edu-meta {
+  color: #d1d5db;
+}
+
+body.dark-mode .edu-degree {
+  color: #f9fafb;
+}
+
+/* Contact line */
+body.dark-mode .contact-line,
+body.dark-mode .contact-line span,
+body.dark-mode .contact-line a,
+body.dark-mode .contact-line a:visited {
+  color: #f9fafb;
+}
+
+body.dark-mode .contact-line a:hover {
+  color: #e5e7eb;
+  text-decoration: underline;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #93c5fd;
+}
+
+body.dark-mode a:hover {
+  color: #bfdbfe;
+}
+
+/* Buttons in dark mode - subtle gray styling */
+body.dark-mode .download-btn,
+body.dark-mode .share-btn,
+body.dark-mode .theme-toggle {
+  border-color: #374151;
+  background-color: #1f2937;
+  color: #d1d5db;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .download-btn:hover,
+body.dark-mode .share-btn:hover,
+body.dark-mode .theme-toggle:hover {
+  border-color: #4b5563;
+  background-color: #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Active pressed state for theme toggle */
+body.dark-mode .theme-toggle:active {
+  background-color: #4b5563;
+}
+
+/* =========================
+   PRINT STYLES
+   ========================= */
+
+@media print {
+  /* Page margins */
+  @page {
+    margin: 0.5in;
+  }
 
   body {
-    margin: 20px auto;
-    padding: 0 12px;
-  }
-
-  h1 {
-    font-size: 16pt;
-  }
-
-  .job-title {
-    font-size: 11.5pt;
-  }
-
-  .job-meta {
-    font-size: 10.5pt;
-  }
-
-  .summary {
+    margin: 0;
+    padding: 0;
+    background: #fff;
     font-size: 11pt;
-  }
-}
-@media (max-width: 600px) {
-  ul {
-    padding-left: 18px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
-  li {
-    margin-bottom: 4px;
+  /* Resume container */
+  main {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #fff !important;
   }
-}
-.download-btn {
-  min-width: 220px;
-  text-align: center;
+
+  /* Headings */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  h3.job-title {
+    color: #000 !important;
+    font-style: italic !important;
+  }
+
+  /* Prevent awkward breaks */
+  p, ul, li {
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  /* Education layout fix */
+  .education-grid {
+    display: block;
+  }
+
+  .education-item {
+    margin-bottom: 10px;
+  }
+
+  /* Hide screen-only elements */
+  .pdf-button-wrapper {
+    display: none !important;
+  }
 }
