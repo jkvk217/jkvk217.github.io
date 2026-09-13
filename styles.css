@@ -32,12 +32,20 @@ body {
    ========================= */
 
 main {
+<<<<<<< HEAD
   max-width: 900px;
+=======
+  max-width: 850px;
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
   margin: 0 auto;
   background-color: #ffffff;
   padding: 32px;
   border-radius: 6px;
+<<<<<<< HEAD
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+=======
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
 }
 
 /* =========================
@@ -238,7 +246,11 @@ ul.job-bullets {
   flex-wrap: nowrap;
 }
 
+<<<<<<< HEAD
 /* Modern action buttons - subtle gray style */
+=======
+/* Modern action buttons */
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
 .download-btn,
 .theme-toggle,
 .share-btn {
@@ -251,6 +263,7 @@ ul.job-bullets {
   letter-spacing: 0.3px;
   line-height: 1.2;
   border-radius: 8px;
+<<<<<<< HEAD
   border: 1px solid #e5e7eb;
   cursor: pointer;
   text-decoration: none;
@@ -258,28 +271,52 @@ ul.job-bullets {
   background-color: #76a5cc;
   color: #374151;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+=======
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3);
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
   transition: all 0.2s ease;
 }
 
 .download-btn:hover,
 .theme-toggle:hover,
 .share-btn:hover {
+<<<<<<< HEAD
   border-color: #d1d5db;
   color: #d1d5db;
   background-color: #696d70;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+=======
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
+  background: linear-gradient(135deg, #64748b 0%, #94a3b8 100%);
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
 }
 
 .download-btn:active,
 .theme-toggle:active,
 .share-btn:active {
+<<<<<<< HEAD
   background-color: #f3f4f6;
+=======
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(6, 182, 212, 0.3);
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
 }
 
 .download-btn:focus-visible,
 .theme-toggle:focus-visible,
 .share-btn:focus-visible {
+<<<<<<< HEAD
   outline: 2px solid #10b981;
+=======
+  outline: 2px solid #06b6d4;
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
   outline-offset: 2px;
 }
 
@@ -364,6 +401,7 @@ body.dark-mode a:hover {
   color: #bfdbfe;
 }
 
+<<<<<<< HEAD
 /* Buttons in dark mode - subtle gray styling */
 body.dark-mode .download-btn,
 body.dark-mode .share-btn,
@@ -372,11 +410,21 @@ body.dark-mode .theme-toggle {
   background-color: #1f2937;
   color: #d1d5db;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+=======
+/* Buttons in dark mode - all three action buttons look the same */
+body.dark-mode .download-btn,
+body.dark-mode .share-btn,
+body.dark-mode .theme-toggle {
+  background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+  box-shadow: 0 2px 8px rgba(34, 211, 238, 0.4);
+  color: #ffffff;
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
 }
 
 body.dark-mode .download-btn:hover,
 body.dark-mode .share-btn:hover,
 body.dark-mode .theme-toggle:hover {
+<<<<<<< HEAD
   border-color: #4b5563;
   background-color: #374151;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
@@ -385,6 +433,18 @@ body.dark-mode .theme-toggle:hover {
 /* Active pressed state for theme toggle */
 body.dark-mode .theme-toggle:active {
   background-color: #4b5563;
+=======
+  background: linear-gradient(135deg, #64748b 0%, #94a3b8 100%);
+  box-shadow: 0 4px 12px rgba(34, 211, 238, 0.5);
+  color: #ffffff;
+}
+
+/* Active pressed state for theme toggle (optional visual feedback on click) */
+body.dark-mode .theme-toggle:active {
+  background: linear-gradient(135deg, #64748b 0%, #64748b 100%);
+  box-shadow: 0 2px 8px rgba(8, 145, 178, 0.5), inset 0 1px 2px rgba(0,0,0,0.2);
+  color: #ffffff;
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
 }
 
 /* =========================
@@ -394,7 +454,11 @@ body.dark-mode .theme-toggle:active {
 @media print {
   /* Page margins */
   @page {
+<<<<<<< HEAD
     margin: 0.5in;
+=======
+    margin: 0..5in;
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
   }
 
   body {
@@ -413,6 +477,7 @@ body.dark-mode .theme-toggle:active {
     padding: 0 !important;
     margin: 0 !important;
     background: #fff !important;
+<<<<<<< HEAD
   }
 
   /* Headings */
@@ -449,3 +514,41 @@ body.dark-mode .theme-toggle:active {
     display: none !important;
   }
 }
+=======
+  }
+
+  /* Headings */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  h3.job-title {
+    color: #000 !important;
+    font-style: italic !important;
+  }
+
+  /* Prevent awkward breaks */
+  p, ul, li {
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  /* Education layout fix */
+  .education-grid {
+    display: block;
+  }
+
+  .education-item {
+    margin-bottom: 10px;
+  }
+
+  /* Hide screen-only elements */
+  .pdf-button-wrapper {
+    display: none !important;
+  }
+}
+>>>>>>> 1dff799bfe42fc9e54b1f2f44f8112c61be4057e
